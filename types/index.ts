@@ -38,6 +38,7 @@ export interface ProductCardData {
   keySpec: string;
   href: string;
   imageAlt: string;
+  imageSrc?: string;
 }
 
 export interface DecisionGuideItem {

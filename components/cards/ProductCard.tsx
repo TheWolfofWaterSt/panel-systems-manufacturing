@@ -1,22 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { ProductCardData } from "@/types";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
+import { getProductImage, images } from "@/lib/images";
 
 export function ProductCard({ product }: { product: ProductCardData }) {
+  const src = product.imageSrc ?? getProductImage(product.slug) ?? images.heroHomepage;
+
   return (
     <article className="bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-      <div className="aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
-        <div className="text-center p-6">
-          <div className="w-16 h-16 mx-auto mb-3 rounded-lg bg-navy-900/10 flex items-center justify-center">
-            <svg className="w-8 h-8 text-navy-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-            </svg>
-          </div>
-          <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">{product.keySpec}</span>
-        </div>
+      <div className="relative aspect-[4/3] bg-slate-100">
+        <Image
+          src={src}
+          alt={product.imageAlt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+        />
       </div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-semibold text-navy-900">{product.name}</h3>
@@ -74,6 +77,23 @@ export function RelatedLinks({ links, title = "Related" }: { links: { label: str
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+export function ProductHeroImage({ slug, alt }: { slug: string; alt: string }) {
+  const src = getProductImage(slug) ?? images.heroHomepage;
+
+  return (
+    <div className="relative aspect-[21/9] md:aspect-[3/1] w-full overflow-hidden rounded-lg border border-slate-200 shadow-sm mb-10">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 1280px"
+        priority
+      />
     </div>
   );
 }

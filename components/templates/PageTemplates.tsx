@@ -1,7 +1,8 @@
 import type { CategoryContent, ProductDetailContent, ResourcePageContent, TrustPageContent } from "@/types";
 import { Container } from "@/components/ui/Container";
 import { PageHero, CTASection, InlineCTA } from "@/components/sections/HeroSection";
-import { ProductCategoryGrid, RelatedLinks } from "@/components/cards/ProductCard";
+import { withImage, categoryHeroImages } from "@/lib/images";
+import { ProductCategoryGrid, RelatedLinks, ProductHeroImage } from "@/components/cards/ProductCard";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ComparisonTable, DecisionGuide, Breadcrumbs, SpecsTable } from "@/components/sections/ComparisonTable";
 import { TestimonialCard } from "@/components/sections/TestimonialsSection";
@@ -40,6 +41,8 @@ export function CategoryPageTemplate({
         headline={content.headline}
         subheadline={content.intro}
         keyMessage={content.keyMessage}
+        imageSrc={categoryHeroImages[content.slug]}
+        imageAlt={content.headline}
       />
 
       <section className="py-12 md:py-16">
@@ -67,7 +70,10 @@ export function CategoryPageTemplate({
         </Container>
       </section>
 
-      <ProductCategoryGrid title="Our Product Lines" products={content.products} />
+      <ProductCategoryGrid
+        title="Our Product Lines"
+        products={content.products.map((p) => withImage(p))}
+      />
 
       {content.inlineCta && (
         <section className="py-8">
@@ -119,6 +125,8 @@ export function ProductDetailTemplate({
               { label: content.series },
             ]}
           />
+
+          <ProductHeroImage slug={content.slug} alt={content.headline} />
 
           {content.models.map((model) => (
             <div key={model.name} className="mb-12">

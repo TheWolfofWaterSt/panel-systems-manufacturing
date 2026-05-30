@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { Factory, Wrench, Ruler } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { images } from "@/lib/images";
 import { Button } from "@/components/ui/Button";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { Container } from "@/components/ui/Container";
@@ -14,11 +16,19 @@ interface HeroSectionProps {
 
 export function HeroSection({ headline, subheadline, showTrustBar = true }: HeroSectionProps) {
   return (
-    <section className="relative bg-navy-900 text-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 opacity-95" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-navy-700)_0%,_transparent_50%)]" />
+    <section className="relative bg-navy-900 text-white overflow-hidden min-h-[520px] flex items-center">
+      <Image
+        src={images.heroHomepage}
+        alt="Commercial room divider installed in an office"
+        fill
+        className="object-cover object-center"
+        priority
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/85 to-navy-900/70" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-navy-700)_0%,_transparent_50%)] opacity-60" />
 
-      <Container className="relative py-20 md:py-28">
+      <Container className="relative py-20 md:py-28 w-full">
         <div className="max-w-3xl">
           <p className="text-amber-400 font-semibold text-sm uppercase tracking-wider mb-4">
             Factory Direct · {siteConfig.savingsClaim}
@@ -61,12 +71,27 @@ interface PageHeroProps {
   headline: string;
   subheadline?: string;
   keyMessage?: string;
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
-export function PageHero({ headline, subheadline, keyMessage }: PageHeroProps) {
+export function PageHero({ headline, subheadline, keyMessage, imageSrc, imageAlt }: PageHeroProps) {
   return (
     <section className="bg-slate-100 border-b border-slate-200">
-      <Container className="py-12 md:py-16">
+      {imageSrc && (
+        <div className="relative w-full aspect-[21/9] md:aspect-[3/1] max-h-[360px]">
+          <Image
+            src={imageSrc}
+            alt={imageAlt ?? headline}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-100 via-transparent to-transparent" />
+        </div>
+      )}
+      <Container className={`py-12 md:py-16 ${imageSrc ? "-mt-8 relative" : ""}`}>
         {keyMessage && (
           <p className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-3">
             {keyMessage}

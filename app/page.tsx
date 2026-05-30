@@ -10,6 +10,7 @@ import { PhoneLink } from "@/components/ui/PhoneLink";
 import { ContactForm } from "@/components/forms/QuoteForm";
 import { homepageFaqs } from "@/content/faqs/homepage";
 import { siteConfig } from "@/lib/site-config";
+import { images } from "@/lib/images";
 
 const homepageProducts = [
   {
@@ -18,7 +19,8 @@ const homepageProducts = [
     description: "Slide open in seconds. From economy gypsum-core to heavy-duty double-panel construction. Heights to 14′.",
     keySpec: "Heights to 14′",
     href: "/sliding-room-dividers/",
-    imageAlt: "Sliding room dividers",
+    imageAlt: "Sliding room dividers in a commercial installation",
+    imageSrc: images.homepage.sliding,
   },
   {
     name: "Operable Partitions",
@@ -26,7 +28,8 @@ const homepageProducts = [
     description: "Push all panels into a closet or adjacent room. Floor clear in minutes, no ceiling beams.",
     keySpec: "Through-wall storage",
     href: "/sliding-room-dividers/sa-3000-operable-partitions/",
-    imageAlt: "Operable partitions",
+    imageAlt: "Operable partition panel components",
+    imageSrc: images.homepage.operable,
   },
   {
     name: "Folding Room Dividers",
@@ -34,7 +37,8 @@ const homepageProducts = [
     description: "Freestanding on rubber casters. Roll to any location, fold into a compact stack. No tracks required.",
     keySpec: "No installation",
     href: "/folding-room-dividers/",
-    imageAlt: "Folding room dividers",
+    imageAlt: "Folding room dividers in a banquet hall",
+    imageSrc: images.homepage.folding,
   },
   {
     name: "Modular Wall Systems",
@@ -42,7 +46,8 @@ const homepageProducts = [
     description: "Semi-permanent walls removable by anyone with basic carpentry skills. Ideal for offices and factories.",
     keySpec: "DIY-installable",
     href: "/modular-wall-systems/",
-    imageAlt: "Modular wall systems",
+    imageAlt: "Modular wall system with glass and fabric panels",
+    imageSrc: images.homepage.modular,
   },
 ];
 
