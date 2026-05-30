@@ -1,0 +1,44 @@
+export const siteConfig = {
+  name: "Panel Systems Manufacturing, Inc.",
+  shortName: "Panel Systems Manufacturing",
+  domain: "roomdividers.org",
+  url: "https://roomdividers.org",
+  tagline: "Commercial Room Dividers — Direct from the Manufacturer",
+  savingsClaim: "Save 50–75%",
+  phone: "(800) 257-1190",
+  phoneTel: "+18002571190",
+  email: "info@roomdividers.org",
+  owner: "Scott Mueller",
+  fax: "(715) 879-4427",
+  address: {
+    street: "E9954 County Road M",
+    city: "Elk Mound",
+    state: "WI",
+    zip: "54739",
+    full: "E9954 County Road M, Elk Mound, WI 54739",
+  },
+  yearsInBusiness: "30+",
+  trustSignals: [
+    "Direct Manufacturer — No Distributor Markup",
+    "DIY-Installable — Instructions + Phone Support Included",
+    "Custom-Built to Your Exact Room Dimensions",
+  ],
+  badges: [
+    "In business 30+ years",
+    "Every installation completed",
+    "Factory Direct — No Markup",
+    "Nationwide Customers",
+  ],
+} as const;
+
+export const quoteProductOptions = [
+  "SA-1 Series",
+  "SA-2 Series",
+  "SA-3000 Operable Partitions",
+  "SA-5000 Operable Partitions",
+  "FD Series Folding",
+  "BW-1500 Barnwood",
+  "Modular Wall Systems",
+  "Clean Room",
+  "Not Sure",
+] as const;

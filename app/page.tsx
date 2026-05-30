@@ -1,0 +1,102 @@
+import { HeroSection, CTASection } from "@/components/sections/HeroSection";
+import { ProductCategoryGrid } from "@/components/cards/ProductCard";
+import { SavingsStory, ProcessSteps } from "@/components/sections/SavingsStory";
+import { IndustriesGrid } from "@/components/sections/IndustriesGrid";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { Container } from "@/components/ui/Container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { PhoneLink } from "@/components/ui/PhoneLink";
+import { ContactForm } from "@/components/forms/QuoteForm";
+import { homepageFaqs } from "@/content/faqs/homepage";
+import { siteConfig } from "@/lib/site-config";
+
+const homepageProducts = [
+  {
+    name: "Sliding Room Dividers",
+    slug: "sliding",
+    description: "Slide open in seconds. From economy gypsum-core to heavy-duty double-panel construction. Heights to 14′.",
+    keySpec: "Heights to 14′",
+    href: "/sliding-room-dividers/",
+    imageAlt: "Sliding room dividers",
+  },
+  {
+    name: "Operable Partitions",
+    slug: "sa-3000",
+    description: "Push all panels into a closet or adjacent room. Floor clear in minutes, no ceiling beams.",
+    keySpec: "Through-wall storage",
+    href: "/sliding-room-dividers/sa-3000-operable-partitions/",
+    imageAlt: "Operable partitions",
+  },
+  {
+    name: "Folding Room Dividers",
+    slug: "folding",
+    description: "Freestanding on rubber casters. Roll to any location, fold into a compact stack. No tracks required.",
+    keySpec: "No installation",
+    href: "/folding-room-dividers/",
+    imageAlt: "Folding room dividers",
+  },
+  {
+    name: "Modular Wall Systems",
+    slug: "modular",
+    description: "Semi-permanent walls removable by anyone with basic carpentry skills. Ideal for offices and factories.",
+    keySpec: "DIY-installable",
+    href: "/modular-wall-systems/",
+    imageAlt: "Modular wall systems",
+  },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      <HeroSection
+        headline="Commercial Room Dividers — Direct from the Manufacturer. Save 50–75%."
+        subheadline="Custom-built to your exact dimensions. Floor-supported — no ceiling beams needed. DIY-installable. Serving churches, schools, offices, and factories nationwide for over 30 years."
+      />
+
+      <ProductCategoryGrid
+        title="Find Your Room Divider System"
+        subtitle="Factory-direct systems for every space, budget, and installation requirement."
+        products={homepageProducts}
+      />
+
+      <SavingsStory />
+      <IndustriesGrid />
+
+      <TestimonialsSection />
+
+      <ProcessSteps />
+
+      <FAQSection
+        items={homepageFaqs}
+        viewAllHref="/why-choose-us/"
+      />
+
+      <section className="py-16 md:py-24 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <SectionHeading
+                title="Shipping Nationwide from Elk Mound, Wisconsin"
+                subtitle="We manufacture and ship directly to customers across the United States. Every product is custom-built in our Wisconsin facility to your exact specifications."
+              />
+              <div className="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
+                <p className="text-sm font-medium text-slate-500 mb-2">Call us directly</p>
+                <PhoneLink variant="prominent" />
+                <p className="mt-4 text-sm text-slate-600">
+                  Our owner, {siteConfig.owner}, answers the phone.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-semibold text-navy-900 mb-4">Quick Contact</h2>
+              <ContactForm />
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <CTASection />
+    </>
+  );
+}
