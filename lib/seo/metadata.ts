@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import type { PageSEO } from "@/types";
 import { siteConfig } from "@/lib/site-config";
+import { getSiteUrl } from "@/lib/site-url";
 
 export function buildMetadata(seo: PageSEO, path: string): Metadata {
-  const url = `${siteConfig.url}${path}`;
+  const url = `${getSiteUrl()}${path}`;
 
   return {
     title: seo.title,
@@ -27,7 +28,7 @@ export function buildMetadata(seo: PageSEO, path: string): Metadata {
 }
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: `${siteConfig.tagline} | ${siteConfig.savingsClaim}`,
     template: `%s | ${siteConfig.shortName}`,

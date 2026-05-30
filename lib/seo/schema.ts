@@ -1,12 +1,13 @@
 import type { FAQItem, ProductDetailContent, Testimonial } from "@/types";
 import { siteConfig } from "@/lib/site-config";
+import { getSiteUrl } from "@/lib/site-url";
 
 export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteConfig.name,
-    url: siteConfig.url,
+    url: getSiteUrl(),
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
     address: {
@@ -41,7 +42,7 @@ export function productSchema(product: ProductDetailContent) {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "USD",
-      url: `${siteConfig.url}/${product.category === "sliding" ? "sliding-room-dividers" : product.category === "folding" ? "folding-room-dividers" : product.category === "modular" ? "modular-wall-systems" : "clean-room-dividers"}/${product.slug}/`,
+      url: `${getSiteUrl()}/${product.category === "sliding" ? "sliding-room-dividers" : product.category === "folding" ? "folding-room-dividers" : product.category === "modular" ? "modular-wall-systems" : "clean-room-dividers"}/${product.slug}/`,
     },
   };
 }

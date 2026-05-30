@@ -35,6 +35,20 @@ npm start
 - Quote and contact forms with honeypot spam protection
 - SEO metadata, JSON-LD schema, sitemap, and 301 redirects from legacy URLs
 
+## Deploy on Vercel (recommended)
+
+This is a Next.js app and is designed to run on [Vercel](https://vercel.com) (Hobby plan is free for personal projects).
+
+1. Import the GitHub repo in Vercel and connect `main`.
+2. Use the default settings (Framework: **Next.js**, Build: `next build`, Output: default).
+3. Deploy — Vercel sets `VERCEL_URL` automatically so sitemap and metadata use your live URL.
+
+**Do not use GitHub Pages** for this repo — it only serves static files and cannot run Next.js.
+
+Optional: add `NEXT_PUBLIC_SITE_URL` in Vercel environment variables if you attach a custom domain.
+
+Form submissions on Vercel are logged in the project’s **Functions** logs (email delivery can be wired up later).
+
 ## Portfolio Note
 
 This is a portfolio demonstration project. Form submissions are logged to the console. Wire up email delivery via environment variables for production use.
