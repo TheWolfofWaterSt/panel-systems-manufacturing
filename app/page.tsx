@@ -7,7 +7,6 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PhoneLink } from "@/components/ui/PhoneLink";
-import { ContactForm } from "@/components/forms/QuoteForm";
 import { homepageFaqs } from "@/content/faqs/homepage";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
@@ -78,25 +77,17 @@ export default function HomePage() {
       />
 
       <section className="py-16 md:py-24 bg-white">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <SectionHeading
-                title="Shipping Nationwide from Elk Mound, Wisconsin"
-                subtitle="We manufacture and ship directly to customers across the United States. Every product is custom-built in our Wisconsin facility to your exact specifications."
-              />
-              <div className="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
-                <p className="text-sm font-medium text-slate-500 mb-2">Call us directly</p>
-                <PhoneLink variant="prominent" />
-                <p className="mt-4 text-sm text-slate-600">
-                  Our owner, {siteConfig.owner}, answers the phone.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-navy-900 mb-4">Quick Contact</h2>
-              <ContactForm />
-            </div>
+        <Container className="max-w-3xl">
+          <SectionHeading
+            title="Shipping Nationwide from Elk Mound, Wisconsin"
+            subtitle="We manufacture and ship directly to customers across the United States. Every product is custom-built in our Wisconsin facility to your exact specifications."
+          />
+          <div className="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
+            <p className="text-sm font-medium text-slate-500 mb-2">Call us directly</p>
+            <PhoneLink variant="prominent" />
+            <p className="mt-4 text-sm text-slate-600">
+              Our owner, {siteConfig.owner}, answers the phone.
+            </p>
           </div>
         </Container>
       </section>
