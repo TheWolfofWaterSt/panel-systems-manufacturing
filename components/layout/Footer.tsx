@@ -76,6 +76,17 @@ export function Footer() {
         <p className="mt-8 text-xs text-steel-400 text-center">
           © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
+        <p className="mt-2 text-xs text-steel-500 text-center">
+          Website Built by{" "}
+          <a
+            href="https://www.jameswolf.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-steel-400 hover:text-white transition-colors"
+          >
+            James Wolf Web Design
+          </a>
+        </p>
       </Container>
     </footer>
   );

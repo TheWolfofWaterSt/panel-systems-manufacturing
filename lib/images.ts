@@ -16,7 +16,6 @@ export const images = {
     "sa-3000-operable-partitions": `${base}/product-sa-3000-operable-partitions.png`,
     "fd-1000": `${base}/product-fd-1000.png`,
     "fd-1500": `${base}/product-fd-1500.png`,
-    "bw-1500-barnwood": `${base}/product-bw-1500-barnwood.png`,
     "fp-1000": `${base}/homepage-modular-wall-systems.png`,
     "fp-1200": `${base}/product-cl-1000.png`,
     "fp-1500": `${base}/homepage-modular-wall-systems.png`,

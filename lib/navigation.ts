@@ -23,7 +23,6 @@ export const mainNavigation: NavItem[] = [
         children: [
           { label: "FD-1000 Standard", href: "/folding-room-dividers/fd-1000/" },
           { label: "FD-1500 Deluxe", href: "/folding-room-dividers/fd-1500/" },
-          { label: "BW-1500 Barnwood", href: "/folding-room-dividers/bw-1500-barnwood/" },
         ],
       },
       {
@@ -87,7 +86,6 @@ export const allRoutes = [
   "/folding-room-dividers/",
   "/folding-room-dividers/fd-1000/",
   "/folding-room-dividers/fd-1500/",
-  "/folding-room-dividers/bw-1500-barnwood/",
   "/modular-wall-systems/",
   "/modular-wall-systems/fp-1000/",
   "/modular-wall-systems/fp-1200/",

@@ -18,18 +18,10 @@ export const foldingCategory: CategoryContent = {
     {
       name: "FD-1500 Deluxe",
       slug: "fd-1500",
-      description: "Acoustic fabric faces on medium-density soundboard.",
+      description: "Acoustic fabric or reclaimed barnwood faces on medium-density soundboard.",
       keySpec: "Enhanced sound reduction",
       href: "/folding-room-dividers/fd-1500/",
       imageAlt: "FD-1500 deluxe folding room divider",
-    },
-    {
-      name: "BW-1500 Barnwood",
-      slug: "bw-1500-barnwood",
-      description: "Reclaimed barnwood panels in three authentic wood styles.",
-      keySpec: "Distinctive rustic aesthetic",
-      href: "/folding-room-dividers/bw-1500-barnwood/",
-      imageAlt: "BW-1500 barnwood folding divider",
     },
   ],
   faqs: [
@@ -109,16 +101,17 @@ export const fd1500: ProductDetailContent = {
   categoryHref: "/folding-room-dividers/",
   series: "FD-1500",
   headline: "FD-1500 Deluxe Folding Room Divider",
-  keyMessage: "Acoustic fabric faces on medium-density soundboard — sound reduction meets portability.",
+  keyMessage: "Acoustic fabric or reclaimed barnwood — same deluxe folding system, your choice of finish.",
   intro:
-    "The FD-1500 upgrades the FD-1000 with acoustical fabric faces laminated to medium-density soundboard, delivering meaningful sound reduction in a fully portable, track-free format.",
+    "The FD-1500 upgrades the FD-1000 with acoustical fabric faces laminated to medium-density soundboard, delivering meaningful sound reduction in a fully portable, track-free format. The same FD-1500 system is also available with reclaimed barnwood panels in three authentic wood styles — ideal for photo studios, churches, and upscale spaces that need visual character.",
   models: [
     {
       name: "FD-1500",
-      tagline: "Deluxe acoustic folding divider",
+      tagline: "Deluxe folding divider — fabric or barnwood",
       specs: [
         { label: "Panel Thickness", value: "1¼″" },
-        { label: "Faces", value: "Acoustical fabric on medium-density soundboard" },
+        { label: "Faces", value: "Acoustical fabric on medium-density soundboard, or reclaimed barnwood in three styles" },
+        { label: "Barnwood Styles", value: "Mixed species center-cut; skip-planed red weathered siding; mixed species skip-planed rustic" },
         { label: "Panel Widths", value: "50″ and 46½″ alternating" },
         { label: "Max Panel Height", value: "8 feet" },
         { label: "Fabric Colors", value: "40 options plus two glassboard face colors" },
@@ -126,60 +119,26 @@ export const fd1500: ProductDetailContent = {
       ],
     },
   ],
-  options: ["Glass inserts", "Marker boards", "Sheetrock facing", "40 fabric colors"],
+  options: ["Glass inserts", "Marker boards", "Sheetrock facing", "40 fabric colors", "Reclaimed barnwood panels (three wood styles)"],
   relatedProducts: [
     { label: "FD-1000 Standard", href: "/folding-room-dividers/fd-1000/" },
-    { label: "BW-1500 Barnwood", href: "/folding-room-dividers/bw-1500-barnwood/" },
     { label: "Fabric & Finish Options", href: "/fabric-and-finish-options/" },
   ],
   quoteModelParam: "fd-1500",
-  faqs: [],
-  seo: {
-    title: "FD-1500 Deluxe Folding Room Divider | Acoustic Portable",
-    description: "FD-1500 deluxe folding divider with acoustic fabric faces. Portable, freestanding, 40 color options. Factory direct pricing.",
-  },
-};
-
-export const bw1500: ProductDetailContent = {
-  slug: "bw-1500-barnwood",
-  category: "folding",
-  categoryLabel: "Folding Room Dividers",
-  categoryHref: "/folding-room-dividers/",
-  series: "BW-1500",
-  headline: "BW-1500 Barnwood Folding Room Divider — Reclaimed Wood Panels",
-  keyMessage: "Reclaimed barnwood panels — three authentic wood styles — for spaces that need character, not just division.",
-  intro:
-    "The BW-1500 combines our proven hinge and caster folding system with reclaimed barnwood panels in three distinctive styles — ideal for photo studios, churches, convention exhibits, and upscale offices that demand visual character.",
-  models: [
+  faqs: [
     {
-      name: "BW-1500",
-      tagline: "Barnwood folding divider",
-      specs: [
-        { label: "Wood Styles", value: "Mixed species center-cut; skip-planed red weathered siding; mixed species skip-planed rustic" },
-        { label: "Panel Thickness", value: "1¼″" },
-        { label: "Frame", value: "1/16″ aluminum frames" },
-        { label: "Panel Widths", value: "50″ and 46½″ alternating" },
-        { label: "Wheels", value: "3″ rubber wheels with step-on brakes" },
-        { label: "Hinge System", value: "Same as FD series — 180° swivel for corner configurations" },
-      ],
+      question: "What is the difference between fabric and barnwood FD-1500 panels?",
+      answer:
+        "Both use the same FD-1500 folding divider system — hinges, casters, and panel dimensions are identical. Choose acoustical fabric for sound reduction, or reclaimed barnwood for a distinctive rustic look.",
     },
   ],
-  applications: ["Photo studio backgrounds", "Church décor", "Convention exhibits", "Upscale offices"],
-  options: ["Three barnwood wood styles"],
-  relatedProducts: [
-    { label: "FD-1500 Deluxe", href: "/folding-room-dividers/fd-1500/" },
-    { label: "Folding Room Dividers Overview", href: "/folding-room-dividers/" },
-  ],
-  quoteModelParam: "bw-1500",
-  faqs: [],
   seo: {
-    title: "BW-1500 Barnwood Folding Room Divider | Reclaimed Wood",
-    description: "BW-1500 barnwood folding dividers with reclaimed wood panels. Three authentic styles. Portable on casters. Factory direct.",
+    title: "FD-1500 Deluxe Folding Room Divider | Fabric or Barnwood",
+    description: "FD-1500 deluxe folding divider with acoustic fabric or reclaimed barnwood faces. Portable, freestanding, 40 color options. Factory direct pricing.",
   },
 };
 
 export const foldingProducts: Record<string, ProductDetailContent> = {
   "fd-1000": fd1000,
   "fd-1500": fd1500,
-  "bw-1500-barnwood": bw1500,
 };

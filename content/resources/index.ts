@@ -69,7 +69,7 @@ export const fabricOptions: ResourcePageContent = {
       items: [
         "Marker boards",
         "Glass inserts (single and insulated)",
-        "Barnwood panels (BW-1500)",
+        "Barnwood panels (FD-1500 option)",
         "FRP Structoglas faces (FP-1200, clean room systems)",
         "Sheetrock facing — paintable (FD series)",
         "ADA-compatible swinging doors",
