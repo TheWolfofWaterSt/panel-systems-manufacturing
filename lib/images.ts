@@ -14,7 +14,6 @@ export const images = {
     "sa-1-series": `${base}/product-sa-1-series.png`,
     "sa-2-series": `${base}/product-sa-2-series.png`,
     "sa-3000-operable-partitions": `${base}/product-sa-3000-operable-partitions.png`,
-    "sa-5000-operable-partitions": `${base}/product-sa-3000-operable-partitions.png`,
     "fd-1000": `${base}/product-fd-1000.png`,
     "fd-1500": `${base}/product-fd-1500.png`,
     "bw-1500-barnwood": `${base}/product-bw-1500-barnwood.png`,

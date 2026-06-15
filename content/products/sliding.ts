@@ -20,10 +20,10 @@ export const slidingCategory: CategoryContent = {
     {
       title: "Full floor clearance needed",
       description: "When panels must disappear completely — stored through a wall into a closet or adjacent room.",
-      recommendation: "SA-3000 or SA-5000 Operable Partitions",
+      recommendation: "SA-3000 Operable Partitions",
     },
   ],
-  comparisonHeaders: ["Feature", "SA-1 Series", "SA-2 Series", "SA-3000", "SA-5000"],
+  comparisonHeaders: ["Feature", "SA-1 Series", "SA-2 Series", "SA-3000"],
   comparisonTable: {
     feature: "",
     values: [],
@@ -53,14 +53,6 @@ export const slidingCategory: CategoryContent = {
       href: "/sliding-room-dividers/sa-3000-operable-partitions/",
       imageAlt: "SA-3000 operable partition system",
     },
-    {
-      name: "SA-5000 Operable Partitions",
-      slug: "sa-5000-operable-partitions",
-      description: "Premium double-panel construction with crank-operated storage.",
-      keySpec: "Crank-operated, max 14′",
-      href: "/sliding-room-dividers/sa-5000-operable-partitions/",
-      imageAlt: "SA-5000 crank-operated operable partition",
-    },
   ],
   faqs: [
     {
@@ -71,7 +63,7 @@ export const slidingCategory: CategoryContent = {
     {
       question: "What is the maximum height for sliding dividers?",
       answer:
-        "SA-1000 supports up to 10′ heights. SA-1500, SA-2 Series, SA-3000, and SA-5000 support heights up to 14′.",
+        "SA-1000 supports up to 10′ heights. SA-1500, SA-2 Series, and SA-3000 support heights up to 14′.",
     },
     {
       question: "How do sound reduction levels differ between models?",
@@ -98,11 +90,11 @@ export const slidingCategory: CategoryContent = {
 };
 
 export const slidingComparisonRows = [
-  { feature: "Max Height", values: ["10′–14′", "14′", "14′", "14′"] },
-  { feature: "Panel Thickness", values: ["1¼″", "2¾″", "2¾″", "2¾″"] },
-  { feature: "Core Construction", values: ["Gypsum / Steel-Honeycomb", "Double-panel w/ dead air", "Double-panel w/ dead air", "Double-panel w/ dead air"] },
-  { feature: "Track Type", values: ["Floor track", "Permanent or removable", "1 7/8″ removable", "3″ single removable"] },
-  { feature: "Best For", values: ["Economy to standard", "Max sound reduction", "Through-wall storage", "Crank-operated storage"] },
+  { feature: "Max Height", values: ["10′–14′", "14′", "14′"] },
+  { feature: "Panel Thickness", values: ["1¼″", "2¾″", "2¾″"] },
+  { feature: "Core Construction", values: ["Gypsum / Steel-Honeycomb", "Double-panel w/ dead air", "Double-panel w/ dead air"] },
+  { feature: "Track Type", values: ["Floor track", "Permanent or removable", "1 7/8″ removable"] },
+  { feature: "Best For", values: ["Economy to standard", "Max sound reduction", "Through-wall storage"] },
 ];
 
 export const sa1Series: ProductDetailContent = {
@@ -302,7 +294,6 @@ export const sa3000: ProductDetailContent = {
     },
   ],
   relatedProducts: [
-    { label: "SA-5000 — Crank-Operated Variant", href: "/sliding-room-dividers/sa-5000-operable-partitions/" },
     { label: "SA-2 Series", href: "/sliding-room-dividers/sa-2-series/", description: "If through-wall storage is not needed" },
     { label: "Installation Guide", href: "/installation-guide/" },
     { label: "Product Videos", href: "/product-videos/" },
@@ -317,58 +308,8 @@ export const sa3000: ProductDetailContent = {
   },
 };
 
-export const sa5000: ProductDetailContent = {
-  slug: "sa-5000-operable-partitions",
-  category: "sliding",
-  categoryLabel: "Sliding Room Dividers",
-  categoryHref: "/sliding-room-dividers/",
-  series: "SA-5000",
-  headline: "SA-5000 Operable Partitions — Crank-Operated Storage System",
-  keyMessage: "Same premium double-panel construction as the SA-3000 — with crank-operated storage for even easier operation.",
-  intro:
-    "The SA-5000 delivers the same premium double-panel construction as the SA-3000 with the added convenience of crank-operated panel storage. Ideal for spaces with frequent open/close cycling and accessibility considerations.",
-  models: [
-    {
-      name: "SA-5000",
-      tagline: "Crank-operated through-wall storage",
-      specs: [
-        { label: "Panel Construction", value: "Same as SA-3000 — 2¾″ double-panel" },
-        { label: "Operation", value: "Crank-operated storage mechanism" },
-        { label: "Track", value: "3″ single removable floor track" },
-        { label: "Max Height", value: "14 feet" },
-        { label: "Max Panel Width", value: "4′ 2″" },
-      ],
-    },
-  ],
-  applications: [
-    "Spaces with frequent open/close cycling",
-    "Accessibility-sensitive environments",
-    "Large multipurpose rooms",
-  ],
-  options: ["Special facings", "Marker boards"],
-  faqs: [
-    {
-      question: "SA-3000 vs. SA-5000 — which should I choose?",
-      answer:
-        "Both offer through-wall storage with premium double-panel construction. Choose the SA-5000 if you prefer crank-operated storage for easier operation, especially in spaces that open and close frequently.",
-    },
-  ],
-  relatedProducts: [
-    { label: "SA-3000 — Manual Push Alternative", href: "/sliding-room-dividers/sa-3000-operable-partitions/" },
-    { label: "Sliding Room Dividers Overview", href: "/sliding-room-dividers/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
-  ],
-  quoteModelParam: "sa-5000",
-  seo: {
-    title: "SA-5000 Crank-Operated Operable Partitions",
-    description:
-      "SA-5000 operable partitions with crank-operated through-wall storage. Premium double-panel construction, floor-supported. Factory direct.",
-  },
-};
-
 export const slidingProducts: Record<string, ProductDetailContent> = {
   "sa-1-series": sa1Series,
   "sa-2-series": sa2Series,
   "sa-3000-operable-partitions": sa3000,
-  "sa-5000-operable-partitions": sa5000,
 };

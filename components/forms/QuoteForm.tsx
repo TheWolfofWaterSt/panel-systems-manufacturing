@@ -14,7 +14,6 @@ const productMap: Record<string, QuoteProductOption> = {
   "sa-1": "SA-1 Series",
   "sa-2": "SA-2 Series",
   "sa-3000": "SA-3000 Operable Partitions",
-  "sa-5000": "SA-5000 Operable Partitions",
   "fd-1000": "FD Series Folding",
   "fd-1500": "FD Series Folding",
   "bw-1500": "BW-1500 Barnwood",

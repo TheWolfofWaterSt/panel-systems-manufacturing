@@ -150,7 +150,6 @@ export type QuoteProductOption =
   | "SA-1 Series"
   | "SA-2 Series"
   | "SA-3000 Operable Partitions"
-  | "SA-5000 Operable Partitions"
   | "FD Series Folding"
   | "BW-1500 Barnwood"
   | "Modular Wall Systems"

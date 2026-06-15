@@ -15,7 +15,6 @@ export const mainNavigation: NavItem[] = [
           { label: "SA-1 Series", href: "/sliding-room-dividers/sa-1-series/" },
           { label: "SA-2 Series", href: "/sliding-room-dividers/sa-2-series/" },
           { label: "SA-3000 Operable", href: "/sliding-room-dividers/sa-3000-operable-partitions/" },
-          { label: "SA-5000 Operable", href: "/sliding-room-dividers/sa-5000-operable-partitions/" },
         ],
       },
       {
@@ -85,7 +84,6 @@ export const allRoutes = [
   "/sliding-room-dividers/sa-1-series/",
   "/sliding-room-dividers/sa-2-series/",
   "/sliding-room-dividers/sa-3000-operable-partitions/",
-  "/sliding-room-dividers/sa-5000-operable-partitions/",
   "/folding-room-dividers/",
   "/folding-room-dividers/fd-1000/",
   "/folding-room-dividers/fd-1500/",
