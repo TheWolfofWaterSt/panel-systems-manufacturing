@@ -68,7 +68,7 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <PhoneLink variant="header" />
-            <Button href="/get-a-quote/" size="sm">
+            <Button href="/contact/" size="sm">
               Get a Free Quote
             </Button>
           </div>
@@ -96,7 +96,7 @@ function MobileNav({ onClose }: { onClose: () => void }) {
       <Container className="py-4">
         <div className="flex flex-col gap-3 mb-4 pb-4 border-b border-navy-700">
           <PhoneLink variant="header" className="text-white" />
-          <Button href="/get-a-quote/" onClick={onClose} className="text-center">
+          <Button href="/contact/" onClick={onClose} className="text-center">
             Get a Free Quote
           </Button>
         </div>

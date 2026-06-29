@@ -30,13 +30,3 @@ export const siteConfig = {
     "Nationwide Customers",
   ],
 } as const;
-
-export const quoteProductOptions = [
-  "SA-1 Series",
-  "SA-2 Series",
-  "SA-3000 Operable Partitions",
-  "FD Series Folding",
-  "Modular Wall Systems",
-  "Clean Room",
-  "Not Sure",
-] as const;

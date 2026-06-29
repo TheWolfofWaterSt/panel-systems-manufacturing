@@ -40,7 +40,7 @@ export const foldingCategory: CategoryContent = {
   ],
   relatedLinks: [
     { label: "Fabric & Finish Options", href: "/fabric-and-finish-options/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   seo: {
     title: "Folding Room Dividers | Portable, Freestanding, No Tracks",

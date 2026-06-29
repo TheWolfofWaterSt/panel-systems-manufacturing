@@ -45,7 +45,7 @@ export const cleanRoomCategory: CategoryContent = {
   relatedLinks: [
     { label: "FP-1200 Modular Wall System", href: "/modular-wall-systems/fp-1200/" },
     { label: "Installation Guide", href: "/installation-guide/" },
-    { label: "Get a Quote", href: "/get-a-quote/" },
+    { label: "Get a Quote", href: "/contact/" },
   ],
   seo: {
     title: "Clean Room Dividers & Modular Rooms | FRP, All-Aluminum",

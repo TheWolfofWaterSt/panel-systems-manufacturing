@@ -41,7 +41,7 @@ export const installationGuide: ResourcePageContent = {
   ],
   relatedLinks: [
     { label: "Product Videos", href: "/product-videos/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
     { label: "Contact for Support", href: "/contact/" },
   ],
   seo: {
@@ -79,7 +79,7 @@ export const fabricOptions: ResourcePageContent = {
   relatedLinks: [
     { label: "Sliding Room Dividers", href: "/sliding-room-dividers/" },
     { label: "Folding Room Dividers", href: "/folding-room-dividers/" },
-    { label: "Get a Quote", href: "/get-a-quote/" },
+    { label: "Get a Quote", href: "/contact/" },
   ],
   seo: {
     title: "Fabric Colors & Finish Options | Room Divider Panels",
@@ -106,7 +106,7 @@ export const productVideos: ResourcePageContent = {
   ],
   relatedLinks: [
     { label: "Installation Guide", href: "/installation-guide/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   seo: {
     title: "Room Divider Product Videos | See Systems in Action",
@@ -135,7 +135,7 @@ export const whyChooseUs: TrustPageContent = {
   relatedLinks: [
     { label: "Case Studies", href: "/case-studies/" },
     { label: "Customer Reviews", href: "/customer-reviews/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   seo: {
     title: "Why Choose Us | Direct Manufacturer Room Dividers",
@@ -152,7 +152,7 @@ export const caseStudiesPage: TrustPageContent = {
   relatedLinks: [
     { label: "Customer Reviews", href: "/customer-reviews/" },
     { label: "Why Choose Us", href: "/why-choose-us/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   seo: {
     title: "Room Divider Case Studies | Documented Cost Savings",
@@ -168,7 +168,7 @@ export const customerReviews: TrustPageContent = {
   testimonialIds: ["pepin-county", "kenosha-bible-church"],
   relatedLinks: [
     { label: "Case Studies", href: "/case-studies/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
     { label: "Contact", href: "/contact/" },
   ],
   seo: {

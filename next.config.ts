@@ -36,6 +36,16 @@ const redirects = [
     destination: "/product-videos/",
     permanent: true,
   },
+  {
+    source: "/get-a-quote",
+    destination: "/contact/",
+    permanent: true,
+  },
+  {
+    source: "/get-a-quote/:path*",
+    destination: "/contact/",
+    permanent: true,
+  },
 ];
 
 const nextConfig: NextConfig = {

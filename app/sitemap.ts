@@ -7,6 +7,6 @@ export default function sitemap() {
     url: `${base}${route === "/" ? "" : route}`,
     lastModified: new Date(),
     changeFrequency: route === "/" ? "weekly" as const : "monthly" as const,
-    priority: route === "/" ? 1 : route.includes("get-a-quote") ? 0.9 : 0.8,
+    priority: route === "/" ? 1 : route.includes("contact") ? 0.9 : 0.8,
   }));
 }

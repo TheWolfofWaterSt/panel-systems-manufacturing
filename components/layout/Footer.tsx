@@ -68,7 +68,7 @@ export function Footer() {
               {" · "}Fax: {siteConfig.fax}
             </p>
           </div>
-          <Button href="/get-a-quote/" variant="primary" size="sm">
+          <Button href="/contact/" variant="primary" size="sm">
             Get a Free Quote
           </Button>
         </div>

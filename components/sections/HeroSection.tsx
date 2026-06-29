@@ -40,7 +40,7 @@ export function HeroSection({ headline, subheadline, showTrustBar = true }: Hero
             {subheadline}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button href="/get-a-quote/" size="lg">
+            <Button href="/contact/" size="lg">
               Get a Free Quote
             </Button>
             <Button href={`tel:${siteConfig.phoneTel}`} variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy-900">
@@ -110,7 +110,7 @@ export function PageHero({ headline, subheadline, keyMessage, imageSrc, imageAlt
 
 export function CTASection({
   headline = "Ready to Divide Your Space — Without the Markup?",
-  primaryHref = "/get-a-quote/",
+  primaryHref = "/contact/",
   primaryLabel = "Get a Free Quote",
 }: {
   headline?: string;

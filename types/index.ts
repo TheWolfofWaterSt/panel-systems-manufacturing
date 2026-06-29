@@ -146,31 +146,11 @@ export interface ResourcePageContent {
   relatedLinks: RelatedLink[];
 }
 
-export type QuoteProductOption =
-  | "SA-1 Series"
-  | "SA-2 Series"
-  | "SA-3000 Operable Partitions"
-  | "FD Series Folding"
-  | "Modular Wall Systems"
-  | "Clean Room"
-  | "Not Sure";
-
-export interface QuoteFormData {
-  name: string;
-  organization?: string;
-  email: string;
-  phone?: string;
-  productInterest: QuoteProductOption;
-  roomLength?: string;
-  ceilingHeight?: string;
-  message?: string;
-  website?: string;
-}
-
 export interface ContactFormData {
   name: string;
   email: string;
   subject: string;
+  phone?: string;
   message: string;
   website?: string;
 }

@@ -32,7 +32,7 @@ npm start
 - Conversion-optimized layout with sticky header, quote CTAs, and click-to-call
 - 50–75% savings messaging throughout
 - Product category hubs and detail pages with comparison tables
-- Quote and contact forms with honeypot spam protection
+- Contact form with honeypot spam protection
 - SEO metadata, JSON-LD schema, sitemap, and 301 redirects from legacy URLs
 
 ## Deploy on Vercel (recommended)

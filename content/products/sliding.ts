@@ -74,7 +74,7 @@ export const slidingCategory: CategoryContent = {
   relatedLinks: [
     { label: "Installation Guide", href: "/installation-guide/" },
     { label: "Fabric & Finish Options", href: "/fabric-and-finish-options/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   inlineCta: "Not sure which model fits your room? Call (800) 257-1190 — our owner will help.",
   seo: {

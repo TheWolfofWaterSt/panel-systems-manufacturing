@@ -6,7 +6,7 @@ import { ProductCategoryGrid, RelatedLinks, ProductHeroImage } from "@/component
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ComparisonTable, DecisionGuide, Breadcrumbs, SpecsTable } from "@/components/sections/ComparisonTable";
 import { TestimonialCard } from "@/components/sections/TestimonialsSection";
-import { QuoteForm } from "@/components/forms/QuoteForm";
+import { Button } from "@/components/ui/Button";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { faqSchema, productSchema } from "@/lib/seo/schema";
 import { caseStudies } from "@/content/case-studies";
@@ -209,9 +209,11 @@ export function ProductDetailTemplate({
                 Get a Quote on the {content.series}
               </h2>
               <p className="text-slate-600 mb-6">
-                Tell us your room dimensions and we&apos;ll provide a custom factory-direct quote.
+                Tell us your room dimensions and product interest in a message — we&apos;ll provide a custom factory-direct quote.
               </p>
-              <QuoteForm variant="short" defaultProduct={content.quoteModelParam} />
+              <Button href="/contact/" size="lg">
+                Contact Us
+              </Button>
             </div>
             <RelatedLinks links={content.relatedProducts} title="Related Products" />
           </div>
@@ -221,7 +223,7 @@ export function ProductDetailTemplate({
       <FAQSection items={content.faqs} />
       <CTASection
         headline={`Ready for a ${content.series} Quote?`}
-        primaryHref={`/get-a-quote/?model=${content.quoteModelParam}`}
+        primaryHref="/contact/"
         primaryLabel={`Get a Quote on ${content.series}`}
       />
       <JsonLd data={productSchema(content)} />
@@ -391,7 +393,7 @@ export function ResourcePageTemplate({ content }: { content: ResourcePageContent
                       <p className="text-slate-600 mt-2">{video.description}</p>
                       {video.productSlug && (
                         <a
-                          href={`/get-a-quote/?model=${video.productSlug}`}
+                          href="/contact/"
                           className="inline-block mt-4 text-amber-600 font-semibold hover:text-amber-700"
                         >
                           Get a Free Quote for this system →

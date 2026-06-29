@@ -72,7 +72,6 @@ export const footerNavigation = {
     { label: "Why Choose Us", href: "/why-choose-us/" },
     { label: "Case Studies", href: "/case-studies/" },
     { label: "Customer Reviews", href: "/customer-reviews/" },
-    { label: "Get a Quote", href: "/get-a-quote/" },
     { label: "Contact", href: "/contact/" },
   ],
 };
@@ -98,6 +97,5 @@ export const allRoutes = [
   "/why-choose-us/",
   "/case-studies/",
   "/customer-reviews/",
-  "/get-a-quote/",
   "/contact/",
 ];

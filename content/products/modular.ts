@@ -53,7 +53,7 @@ export const modularCategory: CategoryContent = {
   relatedLinks: [
     { label: "Installation Guide", href: "/installation-guide/" },
     { label: "Clean Room Dividers", href: "/clean-room-dividers/" },
-    { label: "Get a Free Quote", href: "/get-a-quote/" },
+    { label: "Get a Free Quote", href: "/contact/" },
   ],
   seo: {
     title: "Modular Wall Systems | Removable, DIY-Installable Walls",

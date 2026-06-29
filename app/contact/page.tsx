@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { PageHero } from "@/components/sections/HeroSection";
-import { ContactForm } from "@/components/forms/QuoteForm";
+import { ContactForm } from "@/components/forms/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { siteConfig } from "@/lib/site-config";

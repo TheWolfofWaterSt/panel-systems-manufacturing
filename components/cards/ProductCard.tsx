@@ -28,7 +28,7 @@ export function ProductCard({ product }: { product: ProductCardData }) {
           <Button href={product.href} variant="outline" size="sm" className="flex-1 text-center">
             Learn More
           </Button>
-          <Button href={`/get-a-quote/?model=${product.slug}`} size="sm" className="flex-1 text-center">
+          <Button href="/contact/" size="sm" className="flex-1 text-center">
             Get Quote
           </Button>
         </div>
